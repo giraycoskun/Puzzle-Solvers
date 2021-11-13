@@ -40,7 +40,7 @@ pip freeze > requirements.txt
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-pip install git+https://github.com/giraycoskun/mySearchAlgorithms.git
+pip install -e git+https://github.com/giraycoskun/mySearchAlgorithms.git#egg=mySearchAlgorithms
 ```
 
 ### Documentation Notes

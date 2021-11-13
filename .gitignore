@@ -533,3 +533,6 @@ FodyWeavers.xsd
 *.DS_Store
 .AppleDouble
 .LSOverride
+
+### My Ignore Files ###
+myPuzzleSolvers/Ballsort_Output

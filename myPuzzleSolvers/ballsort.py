@@ -9,7 +9,7 @@ import sys
 import os
 
 from mySearchAlgorithms import UniformCostSearch, AStarSearch
-from tests import ballsort_puzzle_boards
+from puzzle_boards import ballsort_puzzle_boards
 
 module_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.dirname(module_path))
