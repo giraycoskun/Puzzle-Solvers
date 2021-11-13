@@ -46,7 +46,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">myPuzzleSolvers</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">myPuzzleSolvers package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-myPuzzleSolvers.ballsort">myPuzzleSolvers.ballsort module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mypuzzlesolvers-ballsort-module">myPuzzleSolvers.ballsort module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-myPuzzleSolvers.hashi">myPuzzleSolvers.hashi module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-myPuzzleSolvers">Module contents</a></li>
 </ul>
@@ -85,114 +85,8 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
 </section>
-<section id="module-myPuzzleSolvers.ballsort">
-<span id="mypuzzlesolvers-ballsort-module"></span><h2>myPuzzleSolvers.ballsort module<a class="headerlink" href="#module-myPuzzleSolvers.ballsort" title="Permalink to this headline"></a></h2>
-<p>Ballsort Puzzle Solver</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="myPuzzleSolvers.ballsort.goal_test">
-<span class="sig-prename descclassname"><span class="pre">myPuzzleSolvers.ballsort.</span></span><span class="sig-name descname"><span class="pre">goal_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myPuzzleSolvers.ballsort.goal_test" title="Permalink to this definition"></a></dt>
-<dd><p>Tests if goal is satisfied</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>node</strong> (<em>dict</em>) – Node includes the representation for each state</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>True if goal is satisfied</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>bool</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="myPuzzleSolvers.ballsort.heuristic_function">
-<span class="sig-prename descclassname"><span class="pre">myPuzzleSolvers.ballsort.</span></span><span class="sig-name descname"><span class="pre">heuristic_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myPuzzleSolvers.ballsort.heuristic_function" title="Permalink to this definition"></a></dt>
-<dd><p>Heuristic is calculated</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>new_state</strong> (<em>list</em>) – A list of lists describing state</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Heuristic cost</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="myPuzzleSolvers.ballsort.step_cost_function">
-<span class="sig-prename descclassname"><span class="pre">myPuzzleSolvers.ballsort.</span></span><span class="sig-name descname"><span class="pre">step_cost_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myPuzzleSolvers.ballsort.step_cost_function" title="Permalink to this definition"></a></dt>
-<dd><p>[summary]</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>cost</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-<li><p><strong>new_state</strong> (<em>[</em><em>type</em><em>]</em>) – [description]</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>[description]</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>[type]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="myPuzzleSolvers.ballsort.successor_function">
-<span class="sig-prename descclassname"><span class="pre">myPuzzleSolvers.ballsort.</span></span><span class="sig-name descname"><span class="pre">successor_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myPuzzleSolvers.ballsort.successor_function" title="Permalink to this definition"></a></dt>
-<dd><p>Generates child nodes which are successors of parent node</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>node</strong> (<em>dict</em>) – Parent node</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>List of child nodes</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="myPuzzleSolvers.ballsort.take_input">
-<span class="sig-prename descclassname"><span class="pre">myPuzzleSolvers.ballsort.</span></span><span class="sig-name descname"><span class="pre">take_input</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#myPuzzleSolvers.ballsort.take_input" title="Permalink to this definition"></a></dt>
-<dd><p>Take state input from user</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>A list of lists to define state</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>state</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="myPuzzleSolvers.ballsort.take_test_board">
-<span class="sig-prename descclassname"><span class="pre">myPuzzleSolvers.ballsort.</span></span><span class="sig-name descname"><span class="pre">take_test_board</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myPuzzleSolvers.ballsort.take_test_board" title="Permalink to this definition"></a></dt>
-<dd><p>Take state from a test board of a test list from tests module</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>test</strong> (<em>list</em>) – Test board list</p></li>
-<li><p><strong>idx</strong> (<em>int</em>) – Test board id</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>A list of lists defining state</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="mypuzzlesolvers-ballsort-module">
+<h2>myPuzzleSolvers.ballsort module<a class="headerlink" href="#mypuzzlesolvers-ballsort-module" title="Permalink to this headline"></a></h2>
 </section>
 <section id="module-myPuzzleSolvers.hashi">
 <span id="mypuzzlesolvers-hashi-module"></span><h2>myPuzzleSolvers.hashi module<a class="headerlink" href="#module-myPuzzleSolvers.hashi" title="Permalink to this headline"></a></h2>
